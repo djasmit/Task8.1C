@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupPageActivity">
+
+        <EditText
+            android:id="@+id/SignupPageFullNameEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.100000024" />
+
+        <EditText
+            android:id="@+id/SignupPageUsernameEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/SignupPageFullNameEditText"
+            app:layout_constraintStart_toStartOf="@+id/SignupPageFullNameEditText"
+            app:layout_constraintTop_toBottomOf="@+id/SignupPageFullNameEditText"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/SignupPagePasswordEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/SignupPageUsernameEditText"
+            app:layout_constraintStart_toStartOf="@+id/SignupPageUsernameEditText"
+            app:layout_constraintTop_toBottomOf="@+id/SignupPageUsernameEditText"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/SignupPageConfPassEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/SignupPagePasswordEditText"
+            app:layout_constraintStart_toStartOf="@+id/SignupPagePasswordEditText"
+            app:layout_constraintTop_toBottomOf="@+id/SignupPagePasswordEditText"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/CreateAccountButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Create Account"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/SignupPageConfPassEditText"
+            app:layout_constraintStart_toStartOf="@+id/SignupPageConfPassEditText"
+            app:layout_constraintTop_toBottomOf="@+id/SignupPageConfPassEditText"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
